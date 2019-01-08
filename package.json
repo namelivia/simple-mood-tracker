@@ -1,0 +1,10 @@
+{
+	"name": "simple-mood-tracker",
+	"version": "0.0.0",
+	"description": "Just a simple mood tracker that stores your daily mood in a mysql database",
+	"dependencies": {
+		"express": "latest",
+		"mysql": "^2.16.0"
+	},
+	"author": "José Ignacio Amelivia Santiago <jignacio.amelivia@gmail.com>"
+}
