@@ -1,0 +1,14 @@
+[Unit]
+Description=simple-moodtracker
+Documentation=https://github.com/namelivia/simple-mood-tracker
+After=network.target
+
+[Service]
+Environment=NODE_ENV=production
+Type=simple
+User=YOUR_USERNAME
+ExecStart=YOUR_NODE_BINARY_PATH YOUR_INSTALL_PATH/simple-mood-tracker/app.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
