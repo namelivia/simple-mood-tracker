@@ -3,7 +3,7 @@ var $ = require('gulp-load-plugins')({ lazy: true });
 var config = require('./gulp.config')();
 
 gulp.task('help', $.taskListing);
-gulp.task('default', ['help']);
+gulp.task('default', gulp.series('help'));
 
 /**
  * vet the code and create coverage report
