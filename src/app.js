@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser= require('body-parser');
 var app = express();
 var sql = require('./db.js');
-var config = require('./config.js');
+var config = require('../config/config.js');
 
 app.use(express.json());
 

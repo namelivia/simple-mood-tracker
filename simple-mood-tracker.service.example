@@ -7,7 +7,7 @@ After=network.target
 Environment=NODE_ENV=production
 Type=simple
 User=YOUR_USERNAME
-ExecStart=YOUR_NODE_BINARY_PATH YOUR_INSTALL_PATH/simple-mood-tracker/app.js
+ExecStart=YOUR_NODE_BINARY_PATH YOUR_INSTALL_PATH/simple-mood-tracker/src/app.js
 Restart=on-failure
 
 [Install]
