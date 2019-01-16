@@ -21,4 +21,4 @@ Currenly the application only has two possible actions, a `GET` request to `mood
 request to `/moods` will insert a record for the day the request is done with the provided values.
 
 ## Contributing
-Any suggestion, bug reports, localization translations or any other kind enhacements are welcome. Just [open an issue first](https://github.com/namelivia/simple-mood-tracker/issues/new)
+Any suggestion, bug reports, localization translations or any other kind enhacements are welcome. Just [open an issue first](https://github.com/namelivia/simple-mood-tracker/issues/new) for creating a PR remember this project has linting checkings so any PR should comply with them before beign merged, this checks will be automatically applied when opening or modifying the PR's.

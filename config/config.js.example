@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var config = {
 	database : {
@@ -9,6 +9,6 @@ var config = {
 	}
 	host: HOST,
 	port: PORT
-}
+};
 
 module.exports = config;

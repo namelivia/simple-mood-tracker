@@ -5,9 +5,5 @@
       "commonjs": true,
       "node": true
     },
-    "ecmaFeatures": {
-      "modules": true,
-      "experimentalObjectRestSpread": true
-    },
     "extends": "eslint:recommended"
 }

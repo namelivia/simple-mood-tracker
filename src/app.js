@@ -16,7 +16,7 @@ app.listen(config.port, config.host, function(err) {
 
 app.route('/moods')
 	.get(getAllMoods)
-	.post(insertMood)
+	.post(insertMood);
 
 function getAllMoods(req, res) {
 	sql.query('SELECT * FROM moods', function (qErr, qRes) {
