@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')({ lazy: true });
-var config = require('./gulp.config')();
+var $ = require('gulp-load-plugins')();
+var config = require('./gulp.config');
 
 gulp.task('help', $.taskListing);
 gulp.task('default', gulp.series('help'));
@@ -10,11 +10,10 @@ gulp.task('default', gulp.series('help'));
  * @return {Stream}
  */
 gulp.task('vet', function() {
-  log('Analyzing source with JSHint and ESLint');
-
+  console.log('Analyzing source with JSHint and ESLint');
   return gulp
     .src(config.alljs)
-    .pipe($.print())
+    .pipe($.print.default())
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish', { verbose: true }))
     .pipe($.jshint.reporter('fail'))
