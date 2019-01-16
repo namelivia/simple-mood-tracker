@@ -1,4 +1,4 @@
-# Simple mood tracker
+# Simple mood tracker [![Build Status](https://travis-ci.com/namelivia/simple-mood-tracker.svg?branch=master)](https://travis-ci.com/namelivia/simple-mood-tracker)
 
 Dead simple mood tracking service API, just stores the daily mood as an integer on the database, just a little bit more sofisticated than pen and paper.
 
