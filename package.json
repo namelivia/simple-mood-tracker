@@ -1,24 +1,30 @@
 {
-	"name": "simple-mood-tracker",
-	"version": "1.0.0",
-	"repository": "https://github.com/namelivia/simple-mood-tracker",
-	"license": "GPL-3.0",
-	"description": "Just a simple mood tracker that stores your daily mood in a mysql database",
-	"dependencies": {
-		"body-parser": "^1.18.3",
-		"express": "^4.16.0",
-		"mysql": "^2.16.0"
-	},
-	"author": "José Ignacio Amelivia Santiago <jignacio.amelivia@gmail.com>",
-	"devDependencies": {
-		"eslint": "^5.12.0",
-		"gulp": "^4.0.0",
-		"gulp-eslint": "^5.0.0",
-		"gulp-jshint": "^2.1.0",
-		"gulp-load-plugins": "^1.5.0",
-		"gulp-print": "^5.0.0",
-		"gulp-task-listing": "^1.1.0",
-		"jshint": "^2.9.7",
-		"jshint-stylish": "^2.2.1"
-	}
+  "name": "simple-mood-tracker",
+  "version": "1.0.0",
+  "repository": "https://github.com/namelivia/simple-mood-tracker",
+  "license": "GPL-3.0",
+  "description": "Just a simple mood tracker that stores your daily mood in a mysql database",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "author": "José Ignacio Amelivia Santiago <jignacio.amelivia@gmail.com>",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.12.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-print": "^5.0.0",
+    "gulp-task-listing": "^1.1.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.7",
+    "jshint-stylish": "^2.2.1",
+    "mocha": "^5.2.0",
+    "mock-require": "^3.0.3",
+    "nock": "^10.0.6",
+    "sinon": "^7.2.2"
+  }
 }
