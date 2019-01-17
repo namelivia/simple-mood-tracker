@@ -22,6 +22,7 @@ function getAllMoods(req, res) {
 	sql.query('SELECT * FROM moods', function (qErr, qRes) {
 		if (qErr) {
 			console.log('error: ', qErr);
+			res.status(500);
 		} else {
 			res.json(qRes);
 		}
@@ -32,6 +33,7 @@ function insertMood(req, res) {
 	sql.query('INSERT INTO moods (value, time) values (' + req.body.value + ', CURDATE())', function (qErr, qRes) {
 		if (qErr) {
 			console.log('error: ', qErr);
+			res.status(500);
 		} else {
 			console.log(qRes.insertId);
 			res.status(201).json(qRes.insertId);
