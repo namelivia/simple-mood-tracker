@@ -3,4 +3,6 @@ node_js:
   - "11"
 before_script:
   - npm install -g gulp-cli
-script: gulp vet
+script:
+  - gulp vet
+  - gulp test

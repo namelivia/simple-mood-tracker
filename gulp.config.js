@@ -1,7 +1,11 @@
 var config = {
 	alljs: [
 		'./src/*.js',
-		'./config/*.js'
-	]
+		'./config/*.js',
+		'./tests/*.js'
+	],
+	tests: [
+		'./tests/*.js'
+	]	
 };
-module.exports = config
+module.exports = config;

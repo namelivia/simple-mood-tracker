@@ -52,5 +52,7 @@
     "browser": true,
     "node": true,
     "globals": {
+		"describe" : false,
+		"it" : false
     }
 }

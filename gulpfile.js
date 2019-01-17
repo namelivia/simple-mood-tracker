@@ -20,4 +20,15 @@ gulp.task('vet', function() {
     .pipe($.eslint());
 });
 
+gulp.task('test', function() {
+  console.log('Executing the test suite');
+  return gulp
+    .src(config.tests)
+    .pipe($.mocha())
+	.pipe($.istanbul.writeReports());
+});
+
+gulp.task('build', gulp.series('vet', 'test'), function() {
+	console.log('Prepairing for building');
+});
 module.exports = gulp;
