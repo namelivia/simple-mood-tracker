@@ -18,10 +18,12 @@ app.route('/moods')
 	.get(getAllMoods)
 	.post(insertMood);
 
+app.route('/moods/:id')
+	.delete(deleteMood);
+
 function getAllMoods(req, res) {
 	sql.query('SELECT * FROM moods', function (qErr, qRes) {
 		if (qErr) {
-			console.log('error: ', qErr);
 			res.status(500);
 		} else {
 			res.json(qRes);
@@ -35,8 +37,18 @@ function insertMood(req, res) {
 			console.log('error: ', qErr);
 			res.status(500);
 		} else {
-			console.log(qRes.insertId);
 			res.status(201).json(qRes.insertId);
+		}
+	});
+}
+
+function deleteMood(req, res) {
+	sql.query('DELETE FROM moods WHERE id = ' + req.params.id, function (qErr, qRes) {
+		if (qErr) {
+			console.log('error: ', qErr);
+			res.status(500);
+		} else {
+			res.status(204).json(qRes.insertId);
 		}
 	});
 }
