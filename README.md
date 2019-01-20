@@ -1,4 +1,4 @@
-# Simple mood tracker [![Build Status](https://travis-ci.com/namelivia/simple-mood-tracker.svg?branch=master)](https://travis-ci.com/namelivia/simple-mood-tracker)
+# Simple mood tracker [![Build Status](https://travis-ci.com/namelivia/simple-mood-tracker.svg?branch=master)](https://travis-ci.com/namelivia/simple-mood-tracker) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8c1c1cfc150a4fb6815c0089c8005035)](https://www.codacy.com/app/ohcan2/simple-mood-tracker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=namelivia/simple-mood-tracker&amp;utm_campaign=Badge_Grade)
 
 Dead simple mood tracking service API, just stores the daily mood as an integer on the database, just a little bit more sofisticated than pen and paper.
 
