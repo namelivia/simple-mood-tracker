@@ -18,8 +18,10 @@ After doing that the typical systemd operations can be peformed as root, to star
 
 ## Usage
 
-Currenly the application only has two possible actions, a `GET` request to `moods` will return all the moood records, and a `POST`
-request to `/moods` will insert a record for the day the request is done with the provided values.
+Currenly the application only has these actions:
+ * `GET` request to `/moods` will return all the moood records
+ * `POST` request to `/moods` will insert a record for the day the request is done with the provided value in a json like this: `{"value" : 1}`.
+ * `DELETE` request to `/moods/1` will delete the record having the id = 1.
 
 ## Contributing
 Any suggestion, bug reports, localization translations or any other kind enhacements are welcome. Just [open an issue first](https://github.com/namelivia/simple-mood-tracker/issues/new) for creating a PR remember this project has linting checkings so any PR should comply with them before beign merged, this checks will be automatically applied when opening or modifying the PR's.
