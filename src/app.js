@@ -14,6 +14,9 @@ app.listen(config.port, config.host, function(err) {
 	}
 });
 
+app.route('/moods/today')
+	.get(getTodaysMood);
+
 app.route('/moods')
 	.get(getAllMoods)
 	.post(insertMood);
@@ -23,6 +26,16 @@ app.route('/moods/:id')
 
 function getAllMoods(req, res) {
 	sql.query('SELECT * FROM moods', function (qErr, qRes) {
+		if (qErr) {
+			res.status(500);
+		} else {
+			res.json(qRes);
+		}
+	});
+}
+function getTodaysMood(req, res) {
+	var date = new Date().toISOString().slice(0, 10);
+	sql.query('select * from moods WHERE time = \'' + date + '\';', function (qErr, qRes) {
 		if (qErr) {
 			res.status(500);
 		} else {
