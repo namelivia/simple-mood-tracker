@@ -25,6 +25,6 @@
     "jshint-stylish": "^2.2.1",
     "mocha": "^10.0.0",
     "mock-require": "^3.0.3",
-    "sinon": "^13.0.0"
+    "sinon": "^14.0.0"
   }
 }
