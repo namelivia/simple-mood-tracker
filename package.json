@@ -11,7 +11,7 @@
   },
   "author": "José Ignacio Amelivia Santiago <jignacio.amelivia@gmail.com>",
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "^5.0.0",
     "eslint": "^8.0.0",
     "gulp": "^4.0.0",
     "gulp-eslint": "^6.0.0",
